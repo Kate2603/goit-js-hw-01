@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Transaction Results</h1>
+    <div id="output"></div>
+
+    <script src="./js/task-1.js"></script>
+    <script>
+      // Приклад для task-1.js
+      const result1 = makeTransaction(5, 3000);
+      const result2 = makeTransaction(3, 1000);
+      const result3 = makeTransaction(10, 500);
+
+      // Виводимо результати на сторінку
+      document.getElementById('output').innerHTML = `
+        <h2>Results from the first task:</h2>
+        <p>${result1}</p>
+        <p>${result2}</p>
+        <p>${result3}</p>
+      `;
+    </script>
+
+    <h1>Shipping Information</h1>
+    <div id="shipping-output"></div>
+
+    <script src="./js/task-2.js"></script>
+    <script>
+      // Приклад для task-2.js
+      const result4 = getShippingMessage('Australia', 120, 50);
+      const result5 = getShippingMessage('Germany', 80, 20);
+      const result6 = getShippingMessage('Sweden', 100, 20);
+
+      // Виводимо результати на сторінку
+      document.getElementById('shipping-output').innerHTML = `
+        <h2>Results from the second task:</h2>
+        <p>${result4}</p>
+        <p>${result5}</p>
+        <p>${result6}</p>
+      `;
+    </script>
+
+    <h1>Element Width Calculation</h1>
+    <div id="width-output"></div>
+
+    <script src="./js/task-3.js"></script>
+    <script>
+      // Приклад для task-3.js
+      const result7 = getElementWidth('50px', '8px', '4px');
+      const result8 = getElementWidth('60px', '12px', '8.5px');
+      const result9 = getElementWidth('200px', '0px', '0px');
+
+      // Виводимо результати на сторінку
+      document.getElementById('width-output').innerHTML = `
+        <h2>Results from the third task:</h2>
+        <p>${result7}</p>
+        <p>${result8}</p>
+        <p>${result9}</p>
+      `;
+    </script>
+  </body>
+</html>
